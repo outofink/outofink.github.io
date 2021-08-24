@@ -25,7 +25,7 @@
         flex-direction: column;
         align-items: center;
         min-height: 400px;
-        padding: 50px 20vw;
+        padding: 0 10vw;
         font-size: 24px;
       }
       h1 {
@@ -51,7 +51,7 @@
   <body>
     <div class="head"></div>
     <section>
-      <h1 id="title">Hi, I'm Moshe</h1>
+      <h1 id="title" class="center">Hi, I'm Moshe</h1>
 
       <p id="text" class="center">
         I love coffee, Linux, psychological thrillers, and working on whatever
@@ -97,7 +97,6 @@
       const textInstance = new TypeIt("#text", {
         speed: 20,
         startDelay: 300,
-        waitUntilVisible: true,
         afterComplete: async (instance) => {
           instance.destroy();
           text2Instance.go();
@@ -106,7 +105,6 @@
       const text2Instance = new TypeIt("#text2", {
         speed: 20,
         startDelay: 200,
-        waitUntilVisible: true,
         afterComplete: async (instance) => {
           instance.destroy();
         },
